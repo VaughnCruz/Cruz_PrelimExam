@@ -1,0 +1,14 @@
+---
+# tasks file for change-user
+
+- name: Include config.yml
+  include_vars: 
+          file: ../files/config.yml
+
+- name: Create User
+  user: 
+
+          name: vaughncruz
+          comment: Vaughn Ivan Cruz 
+          shell: /bin/bash 
+~ 

@@ -1,0 +1,17 @@
+---
+# tasks file for change-motd
+
+- name: Change Message of the Day 
+  copy: 
+      
+          content: "\n"
+          dest: "/etc/motd"
+
+- name: disable default motd 
+  file: 
+
+          dest: "etc/update-motd.d"
+          mode: 1666
+          state: directory 
+          recurse: yes 
+~ 

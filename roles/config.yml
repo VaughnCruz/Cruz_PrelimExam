@@ -1,0 +1,12 @@
+--- 
+
+- hosts: all
+  vars: 
+    items: rm_test
+    motd: vaughncruz
+
+roles: 
+   - java
+   - python
+   - motd
+   - create_user
